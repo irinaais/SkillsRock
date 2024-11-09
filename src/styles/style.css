@@ -1,0 +1,222 @@
+.page {
+  font-family: Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 1100px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.page__section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header__text {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.form {
+  margin: 20px auto;
+  display: flex;
+  min-height: 50px;
+  position: relative;
+}
+
+.form__label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.form__input {
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.button {
+  cursor: pointer;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.button_variant_add {
+  background-image: url(../images/add.svg);
+  background-size: 22px;
+  width: 70px;
+}
+
+.button_variant_delete {
+  background-image: url(../images/delete.svg);
+  background-size: 20px;
+  width: 25px;
+  background-color: transparent;
+  display: none;
+  height: 30px;
+}
+
+.button_variant_edit {
+  background-image: url(../images/edit.svg) ;
+  background-size: 20px;
+  width: 25px;
+  background-color: transparent;
+  display: none;
+  height: 30px;
+  margin-right: 6px;
+}
+
+.button_variant_confirm {
+  background-image: url(../images/done-green.svg);
+  background-size: 25px;
+  width: 25px;
+  background-color: transparent;
+  display: none;
+  height: 30px;
+  margin-right: 6px;
+}
+
+.button_variant_cancel {
+  background-image: url(../images/cancel.svg);
+  background-size: 20px;
+  width: 25px;
+  background-color: transparent;
+  display: none;
+  height: 30px;
+}
+
+.button_variant_filter {
+  width: fit-content;
+  height: fit-content;
+  background-color: #eee;
+  padding: 5px 10px;
+  color: black;
+}
+
+.button_variant_filter_active {
+  font-weight: bold;
+}
+
+.button_visible {
+  display: block;
+}
+
+.filter-buttons-group {
+  padding: 0 0 20px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list__task {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  transition: opacity .2s;
+  margin: 0 0 3px;
+  padding: 0 6px;
+  max-height: 70px;
+}
+
+.list__task:hover {
+  opacity: 0.7;
+}
+
+.list__task:last-of-type {
+  margin-bottom: 0;
+}
+
+.list__task:hover .button_variant_delete{
+  display: block;
+}
+
+.list__task:hover .button_variant_edit{
+  display: block;
+}
+
+.list__task_completed .list__task-text {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.list__task_completed span::after {
+  display: block;
+}
+
+.list__task_active {
+  border-radius: 10px;
+  box-shadow: 0 8px 10px #eee;
+  transition: box-shadow .4s ease, margin .3s ease;
+  margin: 7px 0;
+}
+
+.list__label {
+
+}
+
+.list__checkbox-input {
+  display: none;
+}
+
+.list__checkbox-toggle {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.list__checkbox-toggle::after {
+  content: url("../images/done-green.svg");
+  position: absolute;
+  display: none;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.list__task-text {
+  cursor: default;
+  flex-grow: 1;
+  text-align: left;
+  margin: 0;
+  padding-left: 3px;
+  max-width: 85%;
+  overflow-wrap: anywhere;
+}
+
+.list__task-input {
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 16px;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 8px 4px;
+  max-height: 50px;
+}
+
+.list__task-input:focus {
+  outline: none;
+}

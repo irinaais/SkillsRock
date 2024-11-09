@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Список задач</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Приложение для хранения списка задач"/>
+    <meta name="keywords" content="список дел, планнер, планирование"/>
+    <meta name="author" content="Ирина Шорохова"/>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header page__section">
+        <h2 class="header__text">Список дел</h2>
+      </header>
+
+      <main class="main page__section">
+        <form class="form">
+          <label class="form__label">
+            <input class="form__input" type="text" placeholder="Новая задача" autofocus minlength="1" maxlength="180">
+          </label>
+          <button class="button button_variant_add" type="button" aria-label="Добавить задачу"></button>
+        </form>
+
+        <div class="filter-buttons-group">
+          <button class="button button_variant_filter" data-filter="all">Все</button>
+          <button class="button button_variant_filter" data-filter="completed">Завершенные</button>
+          <button class="button button_variant_filter" data-filter="incomplete">Незавершенные</button>
+        </div>
+
+        <ul class="list"></ul>
+
+      </main>
+    </div>
+
+    <template id="template">
+      <li class="list__task">
+        <label class="list__label">
+          <input class="list__checkbox-input" type="checkbox">
+          <span class="list__checkbox-toggle"></span>
+        </label>
+        <p class="list__task-text"></p>
+        <button class="button button_variant_edit" type="button" aria-label="Редактировать задачу"></button>
+        <button class="button button_variant_delete" type="button" aria-label="Удалить задачу"></button>
+      </li>
+    </template>
+
+    <script src="index.js"></script>
+  </body>
+</html>
