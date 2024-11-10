@@ -1,0 +1,39 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__text {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.user-list {
+  list-style: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.user__photo {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.user__name {
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

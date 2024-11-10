@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Список случайных пользователей</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Приложение для отображения случайных пользователей"/>
+    <meta name="keywords" content="список пользователей"/>
+    <meta name="author" content="Ирина Шорохова"/>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header page__section">
+        <h1 class="header__text">Список пользователей</h1>
+      </header>
+
+      <main class="main page__section">
+        <ul class="user-list">
+
+        </ul>
+      </main>
+    </div>
+
+    <template id="template">
+      <li class="user">
+        <img class="user__photo" src="" alt="фото пользователя"/>
+        <p class="user__name"></p>
+        <p class="user__email"></p>
+      </li>
+    </template>
+
+    <script src="index.js"></script>
+  </body>
+</html>
