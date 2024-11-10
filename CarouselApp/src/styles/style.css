@@ -1,0 +1,44 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.carousel {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+}
+
+.carousel__images {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-bottom: 25px;
+}
+
+.carousel__image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel__button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: ease-in 0.2s;
+}
+
+.carousel__button:hover {
+  opacity: 0.8;
+}
